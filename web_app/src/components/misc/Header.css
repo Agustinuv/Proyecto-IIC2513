@@ -1,0 +1,52 @@
+header {
+    color: white;
+    background: url('../../images/foto_perfil.jpeg');
+    min-height: 80vh;
+    padding-top: 20vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Cambiar el color de fondo */
+header {
+    background-color: rgba(55, 56, 122, 0.8);
+}
+
+/* Agregar una superposición */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Cambiar según tus preferencias */
+    z-index: -1;
+}
+
+/* Cambiar el estilo de fuente */
+header h1, header h2 {
+    font-weight: bold;
+}
+
+/* Ajustar tamaño y espaciado del texto */
+header h1 {
+    font-size: 3.5rem; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px; /* Aumentar el espaciado entre letras */
+}
+
+header h2 {
+    font-size: 1.8rem; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px; /* Aumentar el espaciado entre letras */
+}
+
+header a {
+    color: #ffffff;
+}
